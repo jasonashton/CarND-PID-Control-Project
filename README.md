@@ -8,11 +8,11 @@ Basic *PID* (Proportional - Integral - Derivative) controller written in `C++` f
 
 The Proportional parameter controls how hard the steering wheel turns as a result of the cross-track error. If the car isn't turning hard enough, then the P value has to be increased.
 
-The Integral parameter controls residual error or offshoot. With just P value alone, the car would swing across the center line. By using the I value, we converge to the center.
+The Derivative parameter controls residual error or offshoot. With just P value alone, the car would swing across the center line. By using the D value, we converge to the center.
 
-The Derivative parameter corrects for bias. In the lesson the example was if we didn't have straight wheels, we wouldn't be able to converge to center line.
+The Integral parameter corrects for bias. In the lesson the example was if we didn't have straight wheels, we wouldn't be able to converge to center line. The I value corrects for not converging over time.
 
-The results were found with manual tuning. By first starting with P, we're able to get the car to turn back to the center. Next we can add I to reduce oversteer. Lastly we can tune D to converge to a solution better.
+The results were found with manual tuning. By first starting with P, we're able to get the car to turn back to the center. Next we can add D to reduce oversteer. Lastly we can tune I to converge to a solution better.
 
 ## Basic Build Instructions
 
