@@ -9,13 +9,14 @@ public:
   double p_error;
   double i_error;
   double d_error;
+  double prev_cte;
 
   /*
   * Coefficients
   */ 
-  double Kp;
-  double Ki;
-  double Kd;
+  double Kp_;
+  double Ki_;
+  double Kd_;
 
   /*
   * Constructor
